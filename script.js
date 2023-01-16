@@ -285,7 +285,8 @@ function displayCourses() {
                 <h3 class="mb-3  text-secondary"><span class="text text-primary">Number of hours : </span>${formationtab[i].nbheure} h</h3>
                 <h3 class="mb-3 text text-primary">number of place :<span class="text text-secondary"> ${formationtab[i].nbplace}</span></h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-                <p class="btn btn-primary text-center" onclick="displaySinglecourse(${formationtab[i].id})">Participate</p>
+                <p class="btn btn-primary text-center" onclick="displaySinglecourse(${formationtab[i].id})"> Participate</p>
+               
             </div>
         </div>
     </div>`
@@ -750,11 +751,12 @@ function displayteacher() {
     content="";
     for (var i = 0; i < usertab.length; i++) {
         if(usertab[i].role=="Professor"){
-        content=content+`<div class="col-lg-4 mb-sm-4 ftco-animate"><div class="staff">
+        content=content+`<div class="col-lg-4 mb-sm-4 ftco-animate">
+        <div class="staff">
         <div class="d-flex mb-4">
             <div class="img" style="background-image: url(images/person_1.jpg);"></div>
             <div class="info ml-4">
-                <h3><a href="teacher-single.html">${usertab[i].ftname} ${usertab[i].ltname}</a></h3>
+                <h5><a href="teacher-single.html">${usertab[i].ftname} ${usertab[i].ltname}</a></h5>
                 <span class="position">${usertab[i].spec}</span>
                 <p class="ftco-social d-flex">
             <a href="#" class="d-flex justify-content-center align-items-center"><span class="icon-twitter"></span></a>
@@ -763,14 +765,14 @@ function displayteacher() {
           </p>
             </div>
         </div>
-        <h3>Experience : ${usertab[i].experience}<h3/>
-        <h3>Email :<h3/>
-        <h2>${usertab[i].email}<h/>
+        <h5 ><span class="text-info">Experience </span>: ${usertab[i].experience}<h5/>
+        <h5><span class="text-info">Email </span> : ${usertab[i].email}<h5/>
+       
 
         <div class="text">
-        <h3>Tel: ${usertab[i].telephone}<h3/>
+        <h5><span class="text-info">Tel :</span> ${usertab[i].telephone}<h5/>
         
-            <p>Even the all-powerful Pointing has no control about the blind texts </p>
+            <p  class="text-seconday">Even the all-powerful Pointing has no control about the blind texts </p>
         </div>
         </div>
     </div>`
