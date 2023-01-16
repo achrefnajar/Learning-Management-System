@@ -282,10 +282,10 @@ function displayCourses() {
             <a href="#" class="img" style="background-image: url(images/course-1.jpg)"></a>
             <div class="text p-4">
                 <p class="category"><span>${formationtab[i].Name}</span> <span class="price">$${formationtab[i].price}</span></p>
-                <h3 class="mb-3"><a href="#">number of hours :${formationtab[i].nbheure}</a></h3>
-                <h3 class="mb-3"><a href="#">number of place :${formationtab[i].nbplace}</a></h3>
+                <h3 class="mb-3  text-secondary"><span class="text text-primary">Number of hours : </span>${formationtab[i].nbheure} h</h3>
+                <h3 class="mb-3 text text-primary">number of place :<span class="text text-secondary"> ${formationtab[i].nbplace}</span></h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-                <p<a href="#" class="btn btn-primary" onclick="displaySinglecourse(${formationtab[i].id})">Participate</a></p>
+                <p class="btn btn-primary text-center" onclick="displaySinglecourse(${formationtab[i].id})">Participate</p>
             </div>
         </div>
     </div>`
