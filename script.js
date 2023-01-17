@@ -620,9 +620,9 @@ function Generateheader() {
         content=` <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
             <li class="nav-item"><a href="courses2.html" class="nav-link">Courses</a></li>
-            <li class="nav-item"><a href="teacher.html" class="nav-link">Teacher</a></li>
+            <li class="nav-item"><a href="teacher2.html" class="nav-link">Teacher</a></li>
             <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-            <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+            
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
             <li><li class="nav-item dropdown">
